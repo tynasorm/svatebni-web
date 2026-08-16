@@ -30,6 +30,8 @@ export function Hero({ countdown }: HeroProps) {
           'radial-gradient(ellipse at center, #6D7350 0%, #5F6546 72%, #565B3E 100%)',
       }}
     >
+      <div className="hero-paper pointer-events-none absolute inset-0 z-0" aria-hidden="true" />
+
       <div
         className="pointer-events-none absolute -left-24 top-1/4 hidden h-72 w-72 rounded-full bg-[#E9D7C4]/10 blur-3xl sm:block"
         aria-hidden="true"
@@ -63,11 +65,13 @@ export function Hero({ countdown }: HeroProps) {
         </p>
 
         <h1 className="font-heading text-[2.75rem] leading-[1.06] tracking-[0.02em] text-[#E9D7C4] sm:text-5xl sm:leading-[1.05] md:text-7xl lg:text-[5.75rem]">
-          <span className="block">Klára</span>
-          <span className="my-0.5 block font-heading italic font-normal tracking-normal sm:my-1">
+          Klára
+          <br className="sm:hidden" />{' '}
+          <span className="inline-block font-heading italic font-normal tracking-normal">
             &
-          </span>
-          <span className="block">Kristýna</span>
+          </span>{' '}
+          <br className="sm:hidden" />
+          Kristýna
         </h1>
 
         <div className="mx-auto my-7 h-px w-20 bg-[#E9D7C4]/60 sm:my-10 sm:w-24" />
