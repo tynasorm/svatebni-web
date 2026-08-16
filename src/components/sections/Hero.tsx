@@ -1,8 +1,9 @@
 import type { Countdown } from '../../types/countdown'
 import { WEDDING_DATE_SHORT, WEDDING_LOCATION } from '../../constants/wedding'
-import heroBg from '../../assets/hero-bg.png'
-import handCoupe from '../../assets/hero-hand-coupe.png'
-import handMartini from '../../assets/hero-hand-martini.png'
+import heroBg from '../../assets/hero-bg.jpg'
+import heroBgMobile from '../../assets/hero-bg-mobile.jpg'
+import heroBgWebp from '../../assets/hero-bg.webp'
+import heroBgMobileWebp from '../../assets/hero-bg-mobile.webp'
 
 type HeroProps = {
   countdown: Countdown
@@ -27,12 +28,23 @@ export function Hero({ countdown }: HeroProps) {
       id="hero"
       className="relative -mt-[3.5rem] flex min-h-[100dvh] scroll-mt-24 items-center justify-center overflow-hidden px-4 pt-[5.75rem] pb-10 sm:-mt-[4.25rem] sm:px-8 sm:pt-[4.25rem] sm:pb-12 md:px-12"
     >
-      <img
-        src={heroBg}
-        alt=""
-        aria-hidden="true"
-        className="absolute inset-0 z-0 h-full w-full scale-105 object-cover object-center brightness-[0.72]"
-      />
+      <picture className="absolute inset-0 z-0 h-full w-full">
+        <source
+          media="(max-width: 639px)"
+          type="image/webp"
+          srcSet={heroBgMobileWebp}
+        />
+        <source media="(max-width: 639px)" srcSet={heroBgMobile} />
+        <source type="image/webp" srcSet={heroBgWebp} />
+        <img
+          src={heroBg}
+          alt=""
+          aria-hidden="true"
+          className="h-full w-full object-cover object-center brightness-[0.72]"
+          fetchPriority="high"
+          decoding="async"
+        />
+      </picture>
       <div
         className="pointer-events-none absolute inset-0 z-0 bg-[#565B3E]/45"
         aria-hidden="true"
@@ -40,20 +52,6 @@ export function Hero({ countdown }: HeroProps) {
       <div
         className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-b from-[#543B27]/25 via-transparent to-[#543B27]/35"
         aria-hidden="true"
-      />
-
-      {/* Toast illustrations — from edges, mid-height so they sit in open space */}
-      <img
-        src={handCoupe}
-        alt=""
-        aria-hidden="true"
-        className="hero-float-a pointer-events-none absolute top-[58%] left-0 z-[1] w-[6.75rem] select-none opacity-50 sm:top-auto sm:bottom-[18%] sm:w-44 sm:opacity-65 md:w-52 lg:w-60 lg:opacity-70"
-      />
-      <img
-        src={handMartini}
-        alt=""
-        aria-hidden="true"
-        className="hero-float-b pointer-events-none absolute top-[32%] right-0 z-[1] w-[6.5rem] select-none opacity-45 sm:top-[24%] sm:w-40 sm:opacity-60 md:w-48 lg:w-56 lg:opacity-70"
       />
 
       <div className="relative z-10 flex w-full max-w-3xl flex-col items-center text-center">
