@@ -13,28 +13,29 @@ export function Details() {
       title="Kdy a kde"
       subtitle="Den D"
       alternate
+      className="[&_header_h2]:text-deep-espresso [&_header_p]:text-deep-espresso [&_header_.h-px]:bg-deep-espresso/45"
     >
       <div className="space-y-8 text-center sm:space-y-10">
         <div>
-          <h3 className="font-heading text-xl text-primary-green sm:text-2xl">
+          <h3 className="font-heading text-xl text-deep-espresso sm:text-2xl">
             Datum
           </h3>
-          <p className="mt-3 font-body font-normal text-warm-brown">
+          <p className="mt-3 font-body font-normal text-deep-espresso">
             {WEDDING_DATE_LONG}
           </p>
         </div>
 
         <div>
-          <h3 className="font-heading text-xl text-primary-green sm:text-2xl">
+          <h3 className="font-heading text-xl text-deep-espresso sm:text-2xl">
             Místo
           </h3>
-          <p className="mt-3 break-words font-body font-normal text-warm-brown">
+          <p className="mt-3 break-words font-body font-normal text-deep-espresso">
             {WEDDING_LOCATION}
           </p>
         </div>
 
         <div className="mx-auto w-full max-w-2xl">
-          <p className="mb-4 font-body italic text-warm-brown sm:mb-5">
+          <p className="mb-4 font-body italic text-deep-espresso sm:mb-5">
             Poniklá 340, 514 01 Poniklá
           </p>
           <div className="overflow-hidden rounded-2xl border border-base-beige shadow-[0_12px_32px_rgba(84,59,39,0.08)]">
@@ -52,7 +53,7 @@ export function Details() {
             href={MAP_EXTERNAL_HREF}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-5 inline-flex min-h-12 w-full max-w-sm items-center justify-center rounded-full border border-primary-green bg-base-beige px-6 py-3 font-body text-[11px] font-normal uppercase tracking-[0.18em] text-deep-espresso transition-colors duration-300 hover:border-accent-sage hover:bg-primary-green hover:text-base-beige sm:mt-6 sm:w-auto sm:max-w-none sm:px-7 sm:tracking-[0.2em]"
+            className="mt-5 inline-flex min-h-12 w-full max-w-sm items-center justify-center rounded-full border border-deep-espresso bg-base-beige px-6 py-3 font-body text-[11px] font-normal uppercase tracking-[0.18em] text-deep-espresso transition-colors duration-300 hover:border-deep-espresso hover:bg-deep-espresso hover:text-base-beige sm:mt-6 sm:w-auto sm:max-w-none sm:px-7 sm:tracking-[0.2em]"
           >
             Otevřít v Google Mapách
           </a>

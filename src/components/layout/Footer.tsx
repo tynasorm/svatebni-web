@@ -2,7 +2,7 @@ import { WEDDING_DATE_SHORT, WEDDING_LOCATION } from '../../constants/wedding'
 
 export function Footer() {
   return (
-    <footer className="bg-deep-espresso px-4 py-12 text-center sm:px-8 sm:py-14 md:px-12">
+    <footer className="bg-[#543B27] px-4 py-12 text-center sm:px-8 sm:py-14 md:px-12">
       <p className="font-heading text-xl text-base-beige sm:text-2xl md:text-3xl">
         Klára & Kristýna
       </p>
