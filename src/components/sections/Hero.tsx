@@ -1,5 +1,6 @@
 import type { Countdown } from '../../types/countdown'
 import { WEDDING_DATE_SHORT, WEDDING_LOCATION } from '../../constants/wedding'
+import heroBg from '../../assets/hero-bg.png'
 import handCoupe from '../../assets/hero-hand-coupe.png'
 import handMartini from '../../assets/hero-hand-martini.png'
 
@@ -25,23 +26,19 @@ export function Hero({ countdown }: HeroProps) {
     <section
       id="hero"
       className="relative -mt-[3.5rem] flex min-h-[100dvh] scroll-mt-24 items-center justify-center overflow-hidden px-4 pt-[5.75rem] pb-10 sm:-mt-[4.25rem] sm:px-8 sm:pt-[4.25rem] sm:pb-12 md:px-12"
-      style={{
-        background:
-          'radial-gradient(ellipse at center, #6D7350 0%, #5F6546 72%, #565B3E 100%)',
-      }}
     >
-      <div className="hero-paper pointer-events-none absolute inset-0 z-0" aria-hidden="true" />
-
+      <img
+        src={heroBg}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 z-0 h-full w-full scale-105 object-cover object-center brightness-[0.72]"
+      />
       <div
-        className="pointer-events-none absolute -left-24 top-1/4 hidden h-72 w-72 rounded-full bg-[#E9D7C4]/10 blur-3xl sm:block"
+        className="pointer-events-none absolute inset-0 z-0 bg-[#565B3E]/45"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute -right-16 top-1/3 hidden h-80 w-80 rounded-full bg-[#FAF7F2]/10 blur-3xl sm:block"
-        aria-hidden="true"
-      />
-      <div
-        className="pointer-events-none absolute bottom-1/4 left-1/3 hidden h-64 w-64 rounded-full bg-[#899064]/15 blur-3xl sm:block"
+        className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-b from-[#543B27]/25 via-transparent to-[#543B27]/35"
         aria-hidden="true"
       />
 
