@@ -35,7 +35,7 @@ export function MusicRequests() {
         <input
           type="hidden"
           name="_next"
-          value="http://localhost:5173/#pisnicky"
+          value="https://svatebni-web-two.vercel.app/#pisnicky"
         />
 
         <div className="space-y-4">
