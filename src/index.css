@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@theme {
+  /* Dusty Olive – hlavní dominantní zelená */
+  --color-primary-green: #6d7350;
+  /* Palm Leaf – sekundární světlejší zelená */
+  --color-accent-sage: #899064;
+  /* Almond Cream – krémová / mandlová */
+  --color-base-beige: #e9d7c4;
+  /* Coffee Bean – teplá kávově hnědá */
+  --color-warm-brown: #704f33;
+  /* Deep Walnut – tmavý ořechový text */
+  --color-deep-espresso: #543b27;
+  /* Světlé pozadí webu – zjemněná Almond Cream */
+  --color-off-white: #faf7f2;
+
+  --font-heading: "gelica", sans-serif;
+  --font-body: "sofia-pro", sans-serif;
+}
+
+:root {
+  --dusty-olive: #6d7350;
+  --palm-leaf: #899064;
+  --almond-cream: #e9d7c4;
+  --coffee-bean: #704f33;
+  --deep-walnut: #543b27;
+  --page-cream: #faf7f2;
+
+  --primary-green: var(--dusty-olive);
+  --accent-sage: var(--palm-leaf);
+  --base-beige: var(--almond-cream);
+  --warm-brown: var(--coffee-bean);
+  --deep-espresso: var(--deep-walnut);
+  --off-white: var(--page-cream);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  color: var(--deep-walnut);
+  background-color: var(--page-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+.font-heading {
+  font-family: "gelica", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.02em;
+}
+
+p {
+  line-height: 1.85;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: var(--font-body);
+}
+
+@keyframes heroFloatA {
+  0%,
+  100% {
+    transform: translateX(-18%) rotate(14deg) translateY(0);
+  }
+  50% {
+    transform: translateX(-18%) rotate(18deg) translateY(-8px);
+  }
+}
+
+@keyframes heroFloatB {
+  0%,
+  100% {
+    transform: translateX(18%) rotate(-14deg) translateY(0);
+  }
+  50% {
+    transform: translateX(18%) rotate(-18deg) translateY(-10px);
+  }
+}
+
+.hero-float-a {
+  animation: heroFloatA 7s ease-in-out infinite;
+  transform-origin: left center;
+}
+
+.hero-float-b {
+  animation: heroFloatB 8.5s ease-in-out infinite;
+  transform-origin: right center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-float-a {
+    animation: none;
+    transform: translateX(-18%) rotate(14deg);
+  }
+
+  .hero-float-b {
+    animation: none;
+    transform: translateX(18%) rotate(-14deg);
+  }
+}
