@@ -5,7 +5,7 @@ const schedule = [
   { time: '12:30', event: 'Společný přesun na místo obřadu' },
   { time: '13:00', event: 'Svatební obřad' },
   { time: '14:00', event: 'Přesun na oběd' },
-  { time: '15:00', event: '… a začíná pravá party' },
+  { time: '15:00', event: '… a začíná pravá párty' },
 ]
 
 export function Schedule() {
