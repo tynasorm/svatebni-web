@@ -38,7 +38,7 @@ export function DressCode() {
     <Section
       id="dresscode"
       title="Co na sebe"
-      subtitle="Dress code"
+      subtitle="Máme dress code!"
       alternate
       className="[&_header_h2]:text-deep-espresso [&_header_p]:text-deep-espresso [&_header_.h-px]:bg-deep-espresso/45"
     >
@@ -70,11 +70,17 @@ export function DressCode() {
           </div>
         </div>
 
-        <p className="mx-auto max-w-xl text-center font-body text-[0.95rem] font-normal leading-[1.85] text-deep-espresso sm:text-base">
-          Budeme moc rády, když se barevně sladíte s naší přírodní paletou.
-          Pro pány: oblek není nutností, lněná košile a pohodlné kalhoty budou
-          naprosto skvělé!
-        </p>
+        <div className="mx-auto max-w-xl space-y-5 text-center font-body text-[0.95rem] font-normal leading-[1.85] text-deep-espresso sm:space-y-6 sm:text-base">
+          <p>
+            My víme, pro někoho to asi bude otrava. Ale slibujeme, že fotky budou
+            stát za to! Moc prosíme a předem děkujeme, že s námi budete ladit.
+          </p>
+          <p>
+            Pro pány: Oblek není nutností! Je to sice svatba, ale nevyžadujeme
+            přísnou formalitu — přece jen se bereme na statku ;-). Košile a
+            pohodlné kalhoty budou úplně dostačující.
+          </p>
+        </div>
       </div>
     </Section>
   )
