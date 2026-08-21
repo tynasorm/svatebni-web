@@ -1,7 +1,7 @@
 import { Section } from '../ui/Section'
 
 const schedule = [
-  { time: '11:00', event: 'Příjezd na statek — odložení věcí, případné ubytování a něco dobrého na přivítanou' },
+  { time: '11:30', event: 'Příjezd na statek — odložení věcí, případné ubytování a něco dobrého na přivítanou' },
   { time: '12:30', event: 'Společný přesun na místo obřadu' },
   { time: '13:00', event: 'Svatební obřad' },
   { time: '14:00', event: 'Přesun na oběd' },
@@ -17,7 +17,7 @@ export function Schedule() {
       className="[&_header_h2]:text-primary-green [&_header_p]:text-primary-green [&_header_.h-px]:bg-primary-green/50"
     >
       <p className="mb-10 text-center font-body text-[0.95rem] font-normal leading-[1.85] text-primary-green sm:mb-12 sm:text-base">
-        Na statek můžete dorazit už kolem 11. hodiny. Bude dost času si v klidu
+        Na statek můžete dorazit už kolem 11:30. Bude dost času si v klidu
         odložit věci a případně se ubytovat, dát si něco dobrého na přivítanou a
         nasát atmosféru. Kolem půl jedné se pak všichni společně přesuneme na
         místo obřadu, kde si ve 13:00 řekneme svoje ANO.
