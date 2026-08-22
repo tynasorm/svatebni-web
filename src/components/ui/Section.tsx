@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 
 type SectionProps = {
   id: string
-  title: string
+  title?: string
   subtitle?: string
   children: ReactNode
   className?: string
@@ -26,11 +26,17 @@ export function Section({
     >
       <div className="mx-auto w-full max-w-3xl">
         <header className="mb-10 text-center sm:mb-14">
-          <h2 className="font-heading text-3xl tracking-[0.02em] text-primary-green sm:text-4xl md:text-5xl">
-            {title}
-          </h2>
+          {title && (
+            <h2 className="font-heading text-3xl tracking-[0.02em] text-primary-green sm:text-4xl md:text-5xl">
+              {title}
+            </h2>
+          )}
           {subtitle && (
-            <p className="mt-4 font-body text-[10px] font-normal uppercase tracking-[0.28em] text-warm-brown sm:mt-5 sm:text-xs sm:tracking-[0.3em]">
+            <p
+              className={`font-body text-[10px] font-normal uppercase tracking-[0.28em] text-warm-brown sm:text-xs sm:tracking-[0.3em] ${
+                title ? 'mt-4 sm:mt-5' : ''
+              }`}
+            >
               {subtitle}
             </p>
           )}

@@ -48,7 +48,7 @@ export function DressCode() {
             {palette.map((swatch) => (
               <div
                 key={swatch.hex}
-                className="flex flex-col items-center gap-3 text-center"
+                className="flex flex-col items-center gap-3 text-center max-sm:last:col-span-2 max-sm:last:justify-self-center"
               >
                 <div
                   className={`h-14 w-14 rounded-full shadow-sm sm:h-16 sm:w-16 ${swatch.className}`}

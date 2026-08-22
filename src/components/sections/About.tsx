@@ -4,7 +4,7 @@ export function About() {
   return (
     <Section
       id="pribeh"
-      title="Náš příběh"
+      title="O nás"
       subtitle="Klára & Kristýna"
       className="[&_header_h2]:text-primary-green [&_header_p]:text-primary-green [&_header_.h-px]:bg-primary-green/50"
     >

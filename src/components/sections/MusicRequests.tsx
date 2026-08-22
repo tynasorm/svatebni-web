@@ -13,7 +13,7 @@ export function MusicRequests() {
   return (
     <Section
       id="pisnicky"
-      title="Písničky na přání"
+      title="Svatební jukebox"
       subtitle="Pro plný parket"
       className="[&_header_h2]:text-primary-green [&_header_p]:text-primary-green [&_header_.h-px]:bg-primary-green/50"
     >

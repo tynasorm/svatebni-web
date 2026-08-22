@@ -60,7 +60,7 @@ h1,
 h2,
 h3,
 .font-heading {
-  font-family: "gelica", sans-serif;
+  font-family: var(--font-heading);
   font-weight: 700;
   font-style: normal;
   letter-spacing: 0.02em;

@@ -16,14 +16,11 @@ export function Details() {
       className="[&_header_h2]:text-deep-espresso [&_header_p]:text-deep-espresso/75 [&_header_.h-px]:bg-deep-espresso/35"
     >
       <div className="mx-auto flex max-w-md flex-col items-center gap-5 text-center sm:gap-6">
-        <div className="w-full">
-          <p className="font-heading text-2xl leading-snug tracking-[0.02em] text-deep-espresso sm:text-3xl">
+        <div className="w-full space-y-2 sm:space-y-2.5">
+          <p className="font-body text-2xl font-bold leading-snug tracking-[0.02em] text-deep-espresso sm:text-3xl">
             {WEDDING_DATE_LONG}
           </p>
-        </div>
-
-        <div className="w-full space-y-2">
-          <p className="font-heading text-2xl leading-snug tracking-[0.02em] text-deep-espresso sm:text-3xl">
+          <p className="font-body text-2xl font-bold leading-snug tracking-[0.02em] text-deep-espresso sm:text-3xl">
             Reinišův statek
           </p>
           <p className="font-body text-sm font-normal leading-relaxed text-deep-espresso sm:text-[0.95rem]">
@@ -31,7 +28,7 @@ export function Details() {
           </p>
         </div>
 
-        <div className="mt-4 w-full max-w-2xl sm:mt-6">
+        <div className="w-full max-w-2xl">
           <div className="overflow-hidden rounded-2xl border border-base-beige shadow-[0_12px_32px_rgba(84,59,39,0.08)]">
             <iframe
               title="Mapa — Reinišův statek, Poniklá"
