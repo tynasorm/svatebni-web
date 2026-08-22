@@ -5,8 +5,7 @@ export function WeddingGifts() {
     <Section
       id="dary"
       title="Svatební dary"
-      subtitle="Když nám chcete něco darovat"
-      className="[&_header_h2]:text-primary-green [&_header_p]:text-primary-green [&_header_.h-px]:bg-primary-green/50"
+      className="[&_header_h2]:text-primary-green [&_header_.h-px]:bg-primary-green/50"
     >
       <div className="mx-auto w-full max-w-lg space-y-5 text-center font-body text-[0.95rem] font-normal leading-[1.85] text-primary-green sm:space-y-6 sm:text-base">
         <p>
