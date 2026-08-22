@@ -13,7 +13,7 @@ export function Footer() {
         {WEDDING_LOCATION}
       </p>
       <p className="mt-8 font-body text-[10px] font-normal uppercase tracking-[0.22em] text-base-beige sm:mt-10 sm:text-xs">
-        Těšíme se na vás
+        SAVE THE DATE
       </p>
     </footer>
   )

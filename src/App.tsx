@@ -8,6 +8,7 @@ import { Travel } from './components/sections/Travel'
 import { Schedule } from './components/sections/Schedule'
 import { DressCode } from './components/sections/DressCode'
 import { MusicRequests } from './components/sections/MusicRequests'
+import { WeddingGifts } from './components/sections/WeddingGifts'
 import { WEDDING_DATE } from './constants/wedding'
 import type { Countdown } from './types/countdown'
 
@@ -49,6 +50,7 @@ function App() {
         <Travel />
         <MusicRequests />
         <DressCode />
+        <WeddingGifts />
       </main>
       <Footer />
     </>

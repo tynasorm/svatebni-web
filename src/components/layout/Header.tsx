@@ -1,12 +1,12 @@
 import { useEffect, useId, useState } from 'react'
 
 const navLinks = [
-  { href: '#pribeh', label: 'O nás' },
   { href: '#kdy-a-kde', label: 'Kdy a kde' },
   { href: '#harmonogram', label: 'Harmonogram' },
   { href: '#doprava', label: 'Doprava' },
   { href: '#pisnicky', label: 'Písničky' },
   { href: '#dresscode', label: 'Co na sebe' },
+  { href: '#dary', label: 'Svatební dary' },
 ]
 
 export function Header() {
